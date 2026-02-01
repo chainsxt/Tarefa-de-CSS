@@ -42,13 +42,20 @@ header nav a:hover{
     gap: 40px;
 }
 
-
 .foto img {
     width: 247px;
     height: 247px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+.foto {
+  transition: transform 0.4s ease;
+}
+
+.foto img:hover{
+    transform: scale(1.08);
 }
 
 .texto {
@@ -74,6 +81,15 @@ header nav a:hover{
 .jogos{
     align-items: flex-start;
     text-align: left;
+}
+
+.imagens-pai img {
+  transition: transform 0.3s ease;
+}
+
+.imagens-pai img:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
 .imagens-pai {
     display: flex;
